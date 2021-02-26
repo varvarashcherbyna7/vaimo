@@ -1,0 +1,60 @@
+.header-register-form
+  padding-top: 3.2rem
+  padding-bottom: 3.2rem
+
+  p
+    width: 439px
+    height: 36px
+    margin-bottom: 1.4rem
+    font-size: 1.2rem
+    font-weight: 400
+    text-align: justify
+
+  form
+    display: flex
+    justify-content: space-between
+
+    .register-input
+      width: 80%
+      input
+        width: 100%
+        outline: none
+        padding-top: 8px
+        padding-bottom: 8px
+        border: 1px solid #E1E0E1
+        border-radius: 3px
+      input[type='email']
+        padding-left: 1.1rem
+        &::placeholder
+          font-size: 1.1rem
+          font-weight: 400
+          color: #4A4A4A
+
+    .register-btn
+      width: 18%
+      button
+        width: 100%
+        outline: none
+        padding-top: 8px
+        padding-bottom: 8px
+        border: 1px solid #000000
+        background: #000000
+        border-radius: 3px
+        text-transform: uppercase
+        color: #ffffff
+
+
+@media screen and (max-width: 768px)
+  .header-register-form
+    width: 94%
+    margin: 0 auto
+    padding-top: 2.4rem
+    padding-bottom: 1.4rem
+    p
+      width: 100%
+
+    form
+      .register-input
+        width: 72%
+      .register-btn
+        width: 27%
