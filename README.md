@@ -1,3 +1,17 @@
+
+Application made with JavaScript library for creating user interfaces - React JS!
+
+The GitHub repository https://github.com/varvarashcherbyna7/vaimo contains the application source code.  
+To design the project using css styles, the sass preprocessor was used.
+
+This application is deployed on the firebase platform (https://vaimo-f133e.web.app/). Also, using firebase, authentication was implemented in the project. 
+When you click on sign in, a modal window appears where you can log in if you are registered, if not, then you need to register! If the user is logged in, the appearance of the site changes.
+Also made a mobile version of the application
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
