@@ -1,23 +1,36 @@
-.headerActive-bg__gradient
+.headerActive
   width: 100%
-  height: 14rem
-  background: #ffffff
+  .headerActive-bg__gradient
+    width: 100%
+    height: 14rem
+    background: #ffffff
 
-.headerActive-bg
-  width: 100%
-  height: 45rem
-  background: url("../../img/bg_headerActive.png") no-repeat center/100%
-  background-size: cover
-  .headerActive-bg-text
-    margin-top: 15rem
-    color: #ffffff
-    font-size: 6rem
-    font-weight: 700
-    text-align: center
+  .headerActive-bg
+    width: 100%
+    height: 45rem
+    background: url("../../img/bg_headerActive.png") no-repeat center/100%
+    background-size: cover
+    .headerActive-bg-text
+      padding-top: 15rem
+      color: #ffffff
+      font-size: 6rem
+      font-weight: 700
+      text-align: center
 
 @media screen and (max-width: 768px)
-  .headerActive-bg__gradient
-    //height: 14rem
-  .headerActive-bg
-    .headerActive-bg-text
-      display: none
+  .headerActive
+    position: relative
+    z-index: 2
+    .headerActive-bg__gradient
+      height: 7.2rem
+    .headerActive-bg
+      background: url("../../img/bg_headerActive.png") no-repeat 0 0
+      background-size: cover
+      height: 15rem
+      position: absolute
+      z-index: 1
+      top: -7.2rem
+      left: 0
+      right: 0
+      .headerActive-bg-text
+        display: none

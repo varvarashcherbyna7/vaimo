@@ -6,9 +6,7 @@ class Register extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            identifier: '',
-            errors: '',
-            isLoading: false
+
         }
     }
 

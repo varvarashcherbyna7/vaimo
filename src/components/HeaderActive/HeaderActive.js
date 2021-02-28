@@ -6,7 +6,7 @@ class HeaderActive extends React.Component {
 
     render() {
         return (
-            <>
+            <div className='headerActive'>
                 <div className='headerActive-bg__gradient'>
                     <NavigationActive/>
                 </div>
@@ -16,7 +16,7 @@ class HeaderActive extends React.Component {
                         Hello! Welcome to Aurora
                     </div>
                 </div>
-            </>
+            </div>
         )
     }
 }

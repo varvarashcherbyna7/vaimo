@@ -36,7 +36,7 @@
         color: #ffffff
       input[type="text"]
         padding-left: 1.6rem
-        color: #ffffff
+        color: #000000
         font-size: 1.1rem
         font-weight: 500
         &::placeholder
@@ -81,8 +81,11 @@
       align-items: center
       div
         margin-right: 1.3rem
+        cursor: pointer
     .basket-img
       margin-right: 1rem
+      .basketWhite
+        display: none
 
     .basket-circle
       width: 2.2rem
@@ -92,3 +95,99 @@
       display: flex
       justify-content: center
       align-items: center
+
+@media screen and (max-width: 768px)
+  .header-bg-navigationActive
+    width: 92%
+    margin: 0 auto
+    padding-top: 1rem
+    display: grid
+    grid-template-columns: 25% 50% 25%
+    justify-content: space-between
+    align-items: flex-start
+    position: relative
+    z-index: 2
+
+    .logo
+      grid-column: 2
+      grid-row: 1
+      text-align: center
+      a
+        text-decoration: none
+        font-size: 3.8rem
+        color: #ffffff
+        font-weight: 700
+
+    .nav
+      grid-column: 1
+      grid-row: 1
+      display: flex
+
+      .nav-search
+        position: unset
+        input
+          display: none
+
+        i
+          position: absolute
+          top: 45%
+          bottom: 0
+          left: 3rem
+          color: #ffffff
+
+      .nav-menu
+        width: 100%
+        i
+          display: block
+          color: #ffffff
+          font-size: 2rem
+          position: absolute
+          top: 45%
+          bottom: 0
+          left: 0
+        .nav-menu-mobile
+          width: 16rem
+          display: flex
+          flex-direction: column
+          position: absolute
+          top: 7.8rem
+          left: -4.5%
+          background: #F2DA91
+          padding: 1.3rem 3rem
+        .nav-menu-desktop
+          display: none
+
+    .basket
+      grid-column: 3
+      grid-row: 1
+
+      .basket-text
+        display: none
+
+      .basket-img
+        position: absolute
+        top: 40%
+        bottom: 0
+        right: 3.5rem
+
+        .basketWhite
+          display: block
+        .basketBlack
+          display: none
+
+      .basket-circle
+        width: 2.2rem
+        height: 2.2rem
+        background: #F2DA91
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 45%
+        bottom: 0
+        right: 0
+
+        span
+          font-size: 1.1rem
+          font-weight: 600

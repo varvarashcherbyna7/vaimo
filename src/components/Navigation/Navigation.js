@@ -30,7 +30,22 @@ const Navigation = () => {
                     <div onClick={handleTrigger}>
                         <i className={trigger ? "fas fa-bars" : "fas fa-times"}/>
                     </div>
-                    <ul>
+                    {
+                        trigger
+                            ?
+                            null
+                            :
+                            <ul className="nav-menu-mobile">
+                                <li><NavLink to='/what’s_new'>what’s new</NavLink></li>
+                                <li><NavLink to='/women'>women</NavLink></li>
+                                <li><NavLink to='/accessories'>accessories</NavLink></li>
+                                <li><NavLink to='/kids'>kids</NavLink></li>
+                                <li><NavLink to='/beauty'>beauty</NavLink></li>
+                                <li><NavLink to='/outlet'>outlet</NavLink></li>
+                                <li><NavLink to='/stories'>stories</NavLink></li>
+                            </ul>
+                    }
+                    <ul className="nav-menu-desktop">
                         <li><NavLink to='/what’s_new'>what’s new</NavLink></li>
                         <li><NavLink to='/women'>women</NavLink></li>
                         <li><NavLink to='/accessories'>accessories</NavLink></li>
@@ -43,13 +58,15 @@ const Navigation = () => {
             </div>
             <div className="basket">
                 <div className="basket-text">
-                    <NavLink to='#' onClick={handleOpen}>Sign in</NavLink> | <NavLink
-                    to='/register'>Register</NavLink>
+                    <NavLink to='#' onClick={handleOpen}>Sign in</NavLink>
                     {
                         isOpenModalLogin
                         &&
                         <Login setOpenModalLogin={handleOpen}/>
                     }
+                    |
+                    <NavLink to='/register'>Register</NavLink>
+
                 </div>
                 <div className="basket-img">
                     <img src={basket} alt="basket"/>
